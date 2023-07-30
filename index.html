@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estiloGeral.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>Lista de Alunos</title>
+</head>
+<body>
+	<main>
+		<h1>Lista de Alunos</h1>
+
+		<form id="novoAluno">
+			<input type="search" id="txtFiltro" class="buscar">
+			<button id="btnBuscar">Buscar</button>
+			<button id="btnLimpar">Limpar</button> 
+			<button id="btnNovo">Novo</button> 
+		</form>
+
+		<table id="tblAlunos">
+			<thead>
+				<th>RM</th>
+				<th>Nome</th>
+				<th>Nota 01</th>
+				<th>Nota 02</th>
+				<th>Média</th>
+				<th>Situação final</th>
+			</thead>
+			<tbody>
+				<tr class="aluno" name="aluno1" id="aluno1"> 
+					<td class="info-rm">30853</td>
+					<td class="info-nome">ALINE DE CASTRO LIMA</td>
+					<td class="info-prova1" name="prova1-1" id="prova1-1">5,5</td>
+					<td class="info-prova2" name="prova2-1" id="prova2-1">6,0</td>
+					<td class="info-media" name="media1" id="media1">0</td>
+					<td class="info-situacao" name="situacao1" id="situacao1">-</td>
+					<td class="remover" name="remover1" id="remover1"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno2" id="aluno2"> 
+					<td class="info-rm">33457</td>
+					<td class="info-nome">ANNA DE LIMA SIQUEIRA</td>
+					<td class="info-prova1" name="prova1-2" id="prova1-2">7,5</td>
+					<td class="info-prova2" name="prova2-2" id="prova2-2">8,5</td>
+					<td class="info-media" name="media2" id="media2">0</td>
+					<td class="info-situacao" name="situacao2" id="situacao2">-</td>
+					<td class="remover" name="remover2" id="remover2"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno3" id="aluno3"> 
+					<td class="info-rm">39434</td>
+					<td class="info-nome">CAROLINA ROCHA DA SILVA</td>
+					<td class="info-prova1" name="prova1-3" id="prova1-3">5,0</td>
+					<td class="info-prova2" name="prova2-3" id="prova2-3">3,0</td>
+					<td class="info-media" name="media3" id="media3">0</td>
+					<td class="info-situacao" name="situacao3" id="situacao3">-</td>
+					<td class="remover" name="remover3" id="remover3"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno4" id="aluno4"> 
+					<td class="info-rm">30853</td>
+					<td class="info-nome">CAROLINE SANTOS</td>
+					<td class="info-prova1" name="prova1-4" id="prova1-4">1,0</td>
+					<td class="info-prova2" name="prova2-4" id="prova2-4">8,5</td>
+					<td class="info-media" name="media4" id="media4">0</td>
+					<td class="info-situacao" name="situacao4" id="situacao4">-</td>
+					<td class="remover" name="remover4" id="remover4"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno5" id="aluno5"> 
+					<td class="info-rm">37893</td>
+					<td class="info-nome">DAVI FRANCISCO CORREA</td>
+					<td class="info-prova1" name="prova1-5" id="prova1-5">0,0</td>
+					<td class="info-prova2" name="prova2-5" id="prova2-5">7,0</td>
+					<td class="info-media" name="media5" id="media5">0</td>
+					<td class="info-situacao" name="situacao5" id="situacao5">-</td>
+					<td class="remover" name="remover5" id="remover5"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno6" id="aluno6"> 
+					<td class="info-rm">39123</td>
+					<td class="info-nome">DAVID ONISHIRO</td>
+					<td class="info-prova1" name="prova1-6" id="prova1-6">10,0</td>
+					<td class="info-prova2" name="prova2-6" id="prova2-6">8,0</td>
+					<td class="info-media" name="media6" id="media6">0</td>
+					<td class="info-situacao" name="situacao6" id="situacao6">-</td>
+					<td class="remover" name="remover6" id="remover6"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno7" id="aluno7"> 
+					<td class="info-rm">38845</td>
+					<td class="info-nome">EDUARDO PINHEIRO SILVA</td>
+					<td class="info-prova1" name="prova1-7" id="prova1-7">6,0</td>
+					<td class="info-prova2" name="prova2-7" id="prova2-7">8,0</td>
+					<td class="info-media" name="media7" id="media7">0</td>
+					<td class="info-situacao" name="situacao7" id="situacao7">-</td>
+					<td class="remover" name="remover7" id="remover7"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno8" id="aluno8"> 
+					<td class="info-rm">32366</td>
+					<td class="info-nome">FELIPE PEREIRA BARBOSA</td>
+					<td class="info-prova1" name="prova1-8" id="prova1-8">9,0</td>
+					<td class="info-prova2" name="prova2-8" id="prova2-8">5,0</td>
+					<td class="info-media" name="media8" id="media8">0</td>
+					<td class="info-situacao" name="situacao8" id="situacao8">-</td>
+					<td class="remover" name="remover8" id="remover8"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno9" id="aluno9"> 
+					<td class="info-rm">35678</td>
+					<td class="info-nome">FELIPE COSTA</td>
+					<td class="info-prova1" name="prova1-9" id="prova1-9">10,0</td>
+					<td class="info-prova2" name="prova2-9" id="prova2-9">9,5</td>
+					<td class="info-media" name="media9" id="media9">0</td>
+					<td class="info-situacao" name="situacao9" id="situacao9">-</td>
+					<td class="remover" name="remover9" id="remover9"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+				<tr class="aluno" name="aluno10" id="aluno10"> 
+					<td class="info-rm">36098</td>
+					<td class="info-nome">EDSON LEGUTH</td>
+					<td class="info-prova1" name="prova1-10" id="prova1-10">10,0</td>
+					<td class="info-prova2" name="prova2-10" id="prova2-10">6,5</td>
+					<td class="info-media" name="media10" id="media10">0</td>
+					<td class="info-situacao" name="situacao10" id="situacao10">-</td>
+					<td class="remover" name="remover10" id="remover10"><button id="btnRemover" class="btnRemover"><img class="lixeira" src="images/lixeira.png"></button></td>
+				</tr>
+
+		    </tbody>
+		</table>
+
+		<div class="bloquear esconder"></div>
+
+		<div id="pnlNovo" class="flutuar esconder">
+			<form id="formNovoAluno">
+				<label for="txtNome">Nome: </label>
+				<input type="text" name="txtNome" id="txtNome">
+				<br>
+				<label for="txtRM">RM: </label>
+				<input type="number" name="txtRM" id="txtRM" min="0" max="99999">
+				<label for="txtNota1">Nota 01: </label>
+				<input type="number" name="txtNota1" id="txtNota1" min="0" max="10">
+				<label for="txtNota2">Nota 02: </label>
+				<input type="number" name="txtNota2" id="txtNota2" min="0" max="10">
+
+				<button id="btnAdicionar">Adicionar</button>
+				<button id="btnCancelar">Cancelar</button>
+				<span id="erro"></span>
+			</form>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="js/funcoes.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/NovoAluno.js"></script>
+	<script type="text/javascript" src="js/remover.js"></script>
+	<script type="text/javascript" src="js/busca.js"></script>
+</body>
+</html>
